@@ -10,7 +10,8 @@
         "tempoBpm": 82,
         "paperType": "半透明纸带"
       },
-      "createdAt": "2026-06-16T00:00:00.000Z"
+      "createdAt": "2026-06-16T00:00:00.000Z",
+      "version": 1
     }
   ],
   "sections": [
@@ -21,7 +22,8 @@
       "endBeat": 32,
       "laneRange": "1-10",
       "checked": true,
-      "note": "开头主题已试奏"
+      "note": "开头主题已试奏",
+      "version": 1
     },
     {
       "id": "section_demo_2",
@@ -29,8 +31,19 @@
       "startBeat": 33,
       "endBeat": 64,
       "laneRange": "4-18",
+      "checked": true,
+      "note": "副歌段两人都确认",
+      "version": 3
+    },
+    {
+      "id": "section_muevvnj5_6h1wlb",
+      "tuneId": "tune_demo",
+      "startBeat": 65,
+      "endBeat": 96,
+      "laneRange": "1-20",
       "checked": false,
-      "note": "副歌段等待校对"
+      "note": "",
+      "version": 1
     }
   ],
   "issues": [
@@ -44,7 +57,166 @@
       "description": "第41拍高音孔漏打",
       "status": "open",
       "createdAt": "2026-06-16T00:00:00.000Z",
-      "resolvedAt": null
+      "resolvedAt": null,
+      "version": 1
+    },
+    {
+      "id": "issue_muevvni0_s9q8ui",
+      "tuneId": "tune_demo",
+      "sectionId": "section_demo_2",
+      "type": "错孔",
+      "beat": 45,
+      "lane": 9,
+      "description": "第45拍第9轨多打孔",
+      "status": "resolved",
+      "version": 2,
+      "createdAt": "2026-09-24T01:59:11.544Z",
+      "resolvedAt": "2026-09-24T01:59:11.572Z",
+      "note": "补孔完成"
+    }
+  ],
+  "history": [
+    {
+      "seq": 1,
+      "at": "2026-09-24T01:58:52.836Z",
+      "objectType": "section",
+      "objectId": "section_demo_2",
+      "tuneId": "tune_demo",
+      "action": "check",
+      "version": 2,
+      "operator": "小林",
+      "before": {
+        "id": "section_demo_2",
+        "tuneId": "tune_demo",
+        "startBeat": 33,
+        "endBeat": 64,
+        "laneRange": "4-18",
+        "checked": false,
+        "note": "副歌段等待校对",
+        "version": 1
+      },
+      "after": {
+        "id": "section_demo_2",
+        "tuneId": "tune_demo",
+        "startBeat": 33,
+        "endBeat": 64,
+        "laneRange": "4-18",
+        "checked": true,
+        "note": "副歌段已校对（小林）",
+        "version": 2
+      }
+    },
+    {
+      "seq": 2,
+      "at": "2026-09-24T01:59:11.537Z",
+      "objectType": "section",
+      "objectId": "section_demo_2",
+      "tuneId": "tune_demo",
+      "action": "check",
+      "version": 3,
+      "operator": "阿陈",
+      "before": {
+        "id": "section_demo_2",
+        "tuneId": "tune_demo",
+        "startBeat": 33,
+        "endBeat": 64,
+        "laneRange": "4-18",
+        "checked": true,
+        "note": "副歌段已校对（小林）",
+        "version": 2
+      },
+      "after": {
+        "id": "section_demo_2",
+        "tuneId": "tune_demo",
+        "startBeat": 33,
+        "endBeat": 64,
+        "laneRange": "4-18",
+        "checked": true,
+        "note": "副歌段两人都确认",
+        "version": 3
+      }
+    },
+    {
+      "seq": 3,
+      "at": "2026-09-24T01:59:11.544Z",
+      "objectType": "issue",
+      "objectId": "issue_muevvni0_s9q8ui",
+      "tuneId": "tune_demo",
+      "action": "create",
+      "version": 1,
+      "operator": "阿陈",
+      "before": null,
+      "after": {
+        "id": "issue_muevvni0_s9q8ui",
+        "tuneId": "tune_demo",
+        "sectionId": "section_demo_2",
+        "type": "错孔",
+        "beat": 45,
+        "lane": 9,
+        "description": "第45拍第9轨多打孔",
+        "status": "open",
+        "version": 1,
+        "createdAt": "2026-09-24T01:59:11.544Z",
+        "resolvedAt": null
+      }
+    },
+    {
+      "seq": 4,
+      "at": "2026-09-24T01:59:11.572Z",
+      "objectType": "issue",
+      "objectId": "issue_muevvni0_s9q8ui",
+      "tuneId": "tune_demo",
+      "action": "status",
+      "version": 2,
+      "operator": "小林",
+      "before": {
+        "id": "issue_muevvni0_s9q8ui",
+        "tuneId": "tune_demo",
+        "sectionId": "section_demo_2",
+        "type": "错孔",
+        "beat": 45,
+        "lane": 9,
+        "description": "第45拍第9轨多打孔",
+        "status": "open",
+        "version": 1,
+        "createdAt": "2026-09-24T01:59:11.544Z",
+        "resolvedAt": null
+      },
+      "after": {
+        "id": "issue_muevvni0_s9q8ui",
+        "tuneId": "tune_demo",
+        "sectionId": "section_demo_2",
+        "type": "错孔",
+        "beat": 45,
+        "lane": 9,
+        "description": "第45拍第9轨多打孔",
+        "status": "resolved",
+        "version": 2,
+        "createdAt": "2026-09-24T01:59:11.544Z",
+        "resolvedAt": "2026-09-24T01:59:11.572Z",
+        "note": "补孔完成"
+      }
+    },
+    {
+      "seq": 5,
+      "at": "2026-09-24T01:59:11.585Z",
+      "objectType": "section",
+      "objectId": "section_muevvnj5_6h1wlb",
+      "tuneId": "tune_demo",
+      "action": "create",
+      "version": 1,
+      "operator": "小林",
+      "before": null,
+      "after": {
+        "id": "section_muevvnj5_6h1wlb",
+        "tuneId": "tune_demo",
+        "startBeat": 65,
+        "endBeat": 96,
+        "laneRange": "1-20",
+        "checked": false,
+        "note": "",
+        "version": 1
+      }
     }
   ]
 }
